@@ -1,0 +1,23 @@
+{
+  "name": "stockapp",
+  "version": "1.0.0",
+  "description": "App for tracking stock price",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "stockapp"
+  },
+  "author": "David Akuma",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  }
+}
