@@ -1,7 +1,64 @@
-<h2>{{stock.companyName}} | ({{stock.symbol}})</h2>
-<br/>
-    {{#each stock}}
-    <div>{{@key}}</div>   
-    <div>{{this}}</div>
-    {{/each}}
-    <br/>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">{{stock.companyName}} | ({{stock.symbol}})</h1>
+    <p class="lead">
+        <table>
+        <tr>
+        <th><div>Open: </div></th>
+        <td><div>{{stock.open}}</div></td>
+        </tr>
+
+        <tr>
+        <th><div>Close: </div></th>
+        <td><div>{{stock.close}}</div></td>
+        </tr>
+
+        <tr>
+        <th><div>High: </div></th>
+        <td><div>{{stock.high}}</div></td>
+        </tr>
+
+        <tr>
+        <th><div>Low: </div></th>
+        <td><div>{{stock.low}}</div></td>
+        </tr>
+
+        <tr>
+        <th><div>Volume: </div></th>
+        <td><div>{{stock.latestVolume}}</div></td>
+        </tr>
+
+        <tr>
+        <th><div>Previous Close: </div></th>
+        <td><div>{{stock.previousClose}}</div></td>
+        </tr>
+
+        <tr>
+        <th><div>Change Percent: </div></th>
+        <td><div>{{stock.changePercent}} %</div></td>
+        </tr>
+
+        <tr>
+        <th><div>Market Cap: </div></th>
+        <td><div>{{stock.marketCap}}</div></td>
+        </tr>
+
+        <tr>
+        <th><div>52 Weeks High: </div></th>
+        <td><div>{{stock.week52High}}</div></td>
+        </tr>
+
+        <tr>
+        <th><div>52 Weeks Low: </div></th>
+        <td><div>{{stock.week52Low}}</div></td>
+        </tr>
+
+        <tr>
+        <th><div>YTD Change: </div></th>
+        <td><div>{{stock.ytdChange}}</div></td>
+        </tr>
+    </table>
+
+    </p>
+  </div>
+</div>
